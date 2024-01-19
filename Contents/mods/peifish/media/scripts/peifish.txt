@@ -810,7 +810,7 @@ module peifish
 	recipe Slice Fillet
     {
         keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
-        BrownBullheadCatfish/AtlanticCod/AtlanticHalibut/AtlanticHerring/AtlanticMackerel/AtlanticTomcod/SummerFlounder/Haddock/Lumpfish/Pollack/RainbowSmelt/SpinyDogfish/StripedBass/WhitePerch/WinterFlounder/BrookTrout/BrownTrout/Gaspereau/RainbowSmelt/BrownTrout
+        BrownBullheadCatfish/AtlanticCod/AtlanticHalibut/AtlanticHerring/AtlanticMackerel/AtlanticTomcod/SummerFlounder/Haddock/Lumpfish/Pollack/RainbowSmelt/SpinyDogfish/StripedBass/WhitePerch/WinterFlounder/BrookTrout/BrownTrout/Gaspereau/RainbowSmelt/BrownTrout,
 
         Result:FishFillet=2,
         Sound:SliceMeat,
