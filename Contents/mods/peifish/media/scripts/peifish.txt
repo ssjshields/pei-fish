@@ -618,7 +618,7 @@ module peifish
 		Proteins = 28,
 		StaticModel = Catfish,
 		WorldStaticModel = Catfish,
-		Override:true
+		OBSOLETE = true,
 	}
 	
 	item Bass
@@ -647,7 +647,7 @@ module peifish
 		Proteins = 48,
 		StaticModel = Bass,
 		WorldStaticModel = Bass,
-		Override:true
+		OBSOLETE = true,
 	}
 	
 	item Perch
@@ -675,7 +675,7 @@ module peifish
 		Lipids = 1,
 		Proteins = 35,
 		WorldStaticModel = Perch,
-		Override:true
+		OBSOLETE = true,
 	}
 
 	item Crappie
@@ -704,7 +704,7 @@ module peifish
 		Proteins = 35,
 		StaticModel = Crappie,
 		WorldStaticModel = Crappie,
-		Override:true
+		OBSOLETE = true,
 	}
 
 	item Panfish
@@ -732,7 +732,7 @@ module peifish
 		Lipids = 2,
 		Proteins = 25,
 		WorldStaticModel = SunFish,
-		Override:true
+		OBSOLETE = true,
 	}
 
 	item Pike
@@ -760,7 +760,7 @@ module peifish
 		Lipids = 1,
 		Proteins = 35,
 		WorldStaticModel = Pike_Ground,
-		Override:true
+		OBSOLETE = true,
 	}
 	
 	item Trout
@@ -788,7 +788,7 @@ module peifish
 		Lipids = 10,
 		Proteins = 36,
 		WorldStaticModel = Trout,
-		Override:true
+		OBSOLETE = true,
 	}
 
 	
