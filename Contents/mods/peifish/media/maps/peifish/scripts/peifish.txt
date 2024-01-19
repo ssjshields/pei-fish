@@ -1,0 +1,103 @@
+module peifish
+	/************************ Tyne Valley Only -  ************************/
+	item Catfish
+	{
+		DisplayName = Brown Bullhead Catfish,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.4,
+		Icon = FishCatfish,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		GoodHot = true,
+		IsCookable = true,
+		OnCreate = Fishing.OnCreateFish,
+		RemoveUnhappinessWhenCooked = true,
+		MinutesToCook = 20,
+		MinutesToBurn = 60,
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		HungerChange = -15,
+		UnhappyChange = 20,
+		Calories = 215,
+		Carbohydrates = 1,
+		Lipids = 4,
+		Proteins = 28,
+		StaticModel = Catfish,
+		WorldStaticModel = Catfish,
+	}
+	
+	item Cod
+	{
+		DisplayName = Atlantic Cod,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.7,
+		Icon = FishCod,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		GoodHot = true,
+		IsCookable = true,
+		OnCreate = Fishing.OnCreateFish,
+		RemoveUnhappinessWhenCooked = true,
+		MinutesToCook = 20,
+		MinutesToBurn = 60,
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		HungerChange = -26,
+		UnhappyChange = 20,
+		Calories = 403,
+		Carbohydrates = 1,
+		Lipids = 24,
+		Proteins = 48,
+		StaticModel = Cod,
+		WorldStaticModel = Cod,
+	}
+	item Halibut
+	{
+		DisplayName = Atlantic Halibut,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.7,
+		Icon = FishHalibut,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		GoodHot = true,
+		IsCookable = true,
+		OnCreate = Fishing.OnCreateFish,
+		RemoveUnhappinessWhenCooked = true,
+		MinutesToCook = 20,
+		MinutesToBurn = 60,
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		HungerChange = -26,
+		UnhappyChange = 20,
+		Calories = 403,
+		Carbohydrates = 1,
+		Lipids = 24,
+		Proteins = 48,
+		StaticModel = Bass,
+		WorldStaticModel = Bass,
+	}
+
+	
+	/************************ Recipes ************************/
+	recipe Slice Fillet
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        Bass/Perch/Pike/Trout,
+
+        Result:FishFillet=2,
+        Sound:SliceMeat,
+        Time:50.0,
+        OnTest:Recipe.OnTest.CutFish,
+        OnCreate:Recipe.OnCreate.CutFish,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Sound:SliceMeat,
+    }
+	
+}
