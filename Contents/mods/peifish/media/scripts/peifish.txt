@@ -1,5 +1,6 @@
 module peifish
-	/************************ Tyne Valley Only -  ************************/
+
+	/************************ Tyne Valley Only - Zone 5 ************************/
 	item BrownBullheadCatfish
 	{
 		DisplayName = Brown Bullhead Catfish,
@@ -28,7 +29,7 @@ module peifish
 		WorldStaticModel = Catfish,
 	}
 
-/************************ Saltwater Fish -  ************************/
+	/************************ Saltwater Fish -  ************************/
 	item AtlanticCod
 	{
 		DisplayName = Atlantic Cod,
@@ -85,7 +86,7 @@ module peifish
 		WorldStaticModel = Sunfish,
 	}
 
-item AtlanticHerring
+	item AtlanticHerring
 	{
 		DisplayName = Atlantic Herring,
 		DisplayCategory = Food,
@@ -113,7 +114,7 @@ item AtlanticHerring
 		WorldStaticModel = Trout,
 	}
 
-item AtlanticMackerel
+	item AtlanticMackerel
 	{
 		DisplayName = Atlantic Mackerel,
 		DisplayCategory = Food,
@@ -141,7 +142,7 @@ item AtlanticMackerel
 		WorldStaticModel = Trout,
 	}
 
-item AtlanticSalmon
+	item AtlanticSalmon
 	{
 		DisplayName = Atlantic Salmon,
 		DisplayCategory = Food,
@@ -169,7 +170,7 @@ item AtlanticSalmon
 		WorldStaticModel = Bass,
 	}
 
-item AtlanticTomcod
+	item AtlanticTomcod
 	{
 		DisplayName = Atlantic Tomcod,
 		DisplayCategory = Food,
@@ -197,7 +198,7 @@ item AtlanticTomcod
 		WorldStaticModel = Pike,
 	}
 
-item SummerFlounder
+	item SummerFlounder
 	{
 		DisplayName = Summer Flounder,
 		DisplayCategory = Food,
@@ -225,7 +226,7 @@ item SummerFlounder
 		WorldStaticModel = Sunfish,
 	}
 
-item Haddock
+	item Haddock
 	{
 		DisplayName = Haddock,
 		DisplayCategory = Food,
@@ -253,7 +254,7 @@ item Haddock
 		WorldStaticModel = Trout,
 	}
 
-item Lumpfish
+	item Lumpfish
 	{
 		DisplayName = Lumpfish,
 		DisplayCategory = Food,
@@ -281,7 +282,7 @@ item Lumpfish
 		WorldStaticModel = Perch,
 	}
 
-item Pollack
+	item Pollack
 	{
 		DisplayName = Pollack,
 		DisplayCategory = Food,
@@ -309,7 +310,7 @@ item Pollack
 		WorldStaticModel = Trout,
 	}
 
-item RainbowSmelt
+	item RainbowSmelt
 	{
 		DisplayName = Rainbow Smelt,
 		DisplayCategory = Food,
@@ -337,7 +338,7 @@ item RainbowSmelt
 		WorldStaticModel = Littlebaitfish,
 	}
 
-item SpinyDogfish
+	item SpinyDogfish
 	{
 		DisplayName = Spiny Dogfish,
 		DisplayCategory = Food,
@@ -365,7 +366,7 @@ item SpinyDogfish
 		WorldStaticModel = Pike,
 	}
 
-item StripedBass
+	item StripedBass
 	{
 		DisplayName = Striped Bass,
 		DisplayCategory = Food,
@@ -393,7 +394,7 @@ item StripedBass
 		WorldStaticModel = Bass,
 	}
 
-item WhitePerch
+	item WhitePerch
 	{
 		DisplayName = White Perch,
 		DisplayCategory = Food,
@@ -421,7 +422,7 @@ item WhitePerch
 		WorldStaticModel = Crappie,
 	}
 
-item WinterFlounder
+	item WinterFlounder
 	{
 		DisplayName = Winter Flounder,
 		DisplayCategory = Food,
@@ -449,8 +450,8 @@ item WinterFlounder
 		WorldStaticModel = Sunfish,
 	}
 
-/************************ Freshwater Fish -  ************************/
-item BrookTrout
+	/************************ Freshwater Fish -  ************************/
+	item BrookTrout
 	{
 		DisplayName = Brook Trout,
 		DisplayCategory = Food,
@@ -478,7 +479,7 @@ item BrookTrout
 		WorldStaticModel = Trout,
 	}
 
-item BrownTrout
+	item BrownTrout
 	{
 		DisplayName = Brown Trout,
 		DisplayCategory = Food,
@@ -506,7 +507,7 @@ item BrownTrout
 		WorldStaticModel = Trout,
 	}
 
-item Gaspereau 
+	item Gaspereau 
 	{
 		DisplayName = Gaspereau,
 		DisplayCategory = Food,
@@ -534,7 +535,7 @@ item Gaspereau
 		WorldStaticModel = Bass,
 	}
 
-item RainbowSmelt
+	item RainbowSmelt
 	{
 		DisplayName = Rainbow Smelt,
 		DisplayCategory = Food,
@@ -562,7 +563,7 @@ item RainbowSmelt
 		WorldStaticModel = Trout,
 	}
 
-item BrownTrout
+	item BrownTrout
 	{
 		DisplayName = Brown Trout,
 		DisplayCategory = Food,
@@ -589,6 +590,207 @@ item BrownTrout
 		StaticModel = Trout,
 		WorldStaticModel = Trout,
 	}
+	
+	/************************ Overrides ************************/
+	item Catfish
+	{
+		DisplayName = Catfish,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.4,
+		Icon = FishCatfish,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		GoodHot = true,
+		IsCookable = true,
+		OnCreate = Fishing.OnCreateFish,
+		RemoveUnhappinessWhenCooked = true,
+		MinutesToCook = 20,
+		MinutesToBurn = 60,
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		HungerChange = -15,
+		UnhappyChange = 20,
+		Calories = 215,
+		Carbohydrates = 1,
+		Lipids = 4,
+		Proteins = 28,
+		StaticModel = Catfish,
+		WorldStaticModel = Catfish,
+		Override:true
+	}
+	
+	item Bass
+	{
+		DisplayName = Bass,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.7,
+		Icon = FishBass,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		GoodHot = true,
+		IsCookable = true,
+		OnCreate = Fishing.OnCreateFish,
+		RemoveUnhappinessWhenCooked = true,
+		MinutesToCook = 20,
+		MinutesToBurn = 60,
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		HungerChange = -26,
+		UnhappyChange = 20,
+		Calories = 403,
+		Carbohydrates = 1,
+		Lipids = 24,
+		Proteins = 48,
+		StaticModel = Bass,
+		WorldStaticModel = Bass,
+		Override:true
+	}
+	
+	item Perch
+	{
+		DisplayName = Perch,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.4,
+		Icon = FishPerch,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		GoodHot = true,
+		IsCookable = true,
+		OnCreate = Fishing.OnCreateFish,
+		RemoveUnhappinessWhenCooked = true,
+		MinutesToCook = 20,
+		MinutesToBurn = 60,
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		HungerChange = -15,
+		UnhappyChange = 20,
+		Calories = 165,
+		Carbohydrates = 1,
+		Lipids = 1,
+		Proteins = 35,
+		WorldStaticModel = Perch,
+		Override:true
+	}
+
+	item Crappie
+	{
+		DisplayName = Crappie,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.4,
+		Icon = FishCrappie,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		GoodHot = true,
+		IsCookable = true,
+		OnCreate = Fishing.OnCreateFish,
+		RemoveUnhappinessWhenCooked = true,
+		MinutesToCook = 20,
+		MinutesToBurn = 60,
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		HungerChange = -15,
+		UnhappyChange = 20,
+		Calories = 165,
+		Carbohydrates = 1,
+		Lipids = 1,
+		Proteins = 35,
+		StaticModel = Crappie,
+		WorldStaticModel = Crappie,
+		Override:true
+	}
+
+	item Panfish
+	{
+		DisplayName = Sunfish,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.4,
+		Icon = FishPanfish,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		GoodHot = true,
+		IsCookable = true,
+		OnCreate = Fishing.OnCreateFish,
+		RemoveUnhappinessWhenCooked = true,
+		MinutesToCook = 20,
+		MinutesToBurn = 60,
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		HungerChange = -15,
+		UnhappyChange = 20,
+		Calories = 155,
+		Carbohydrates = 1,
+		Lipids = 2,
+		Proteins = 25,
+		WorldStaticModel = SunFish,
+		Override:true
+	}
+
+	item Pike
+	{
+		DisplayName = Pike,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.4,
+		Icon = FishPike,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		GoodHot = true,
+		IsCookable = true,
+		OnCreate = Fishing.OnCreateFish,
+		RemoveUnhappinessWhenCooked = true,
+		MinutesToCook = 20,
+		MinutesToBurn = 60,
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		HungerChange = -15,
+		UnhappyChange = 20,
+		Calories = 159,
+		Carbohydrates = 1,
+		Lipids = 1,
+		Proteins = 35,
+		WorldStaticModel = Pike_Ground,
+		Override:true
+	}
+	
+	item Trout
+	{
+		DisplayName = Trout,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.4,
+		Icon = FishTrout,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		GoodHot = true,
+		IsCookable = true,
+		OnCreate = Fishing.OnCreateFish,
+		RemoveUnhappinessWhenCooked = true,
+		MinutesToCook = 20,
+		MinutesToBurn = 60,
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		HungerChange = -15,
+		UnhappyChange = 20,
+		Calories = 230,
+		Carbohydrates = 1,
+		Lipids = 10,
+		Proteins = 36,
+		WorldStaticModel = Trout,
+		Override:true
+	}
+
 	
 	/************************ Recipes ************************/
 	recipe Slice Fillet
