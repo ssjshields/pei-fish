@@ -821,6 +821,7 @@ module peifish
         OnGiveXP:Recipe.OnGiveXP.Cooking10,
 		Sound:SliceMeat,
     }
+	
 	recipe Slice Fillet
     {
         keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
