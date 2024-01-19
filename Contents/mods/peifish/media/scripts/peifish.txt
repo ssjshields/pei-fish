@@ -46,7 +46,7 @@ module peifish
 		MinutesToCook = 20,
 		MinutesToBurn = 60,
 		DaysFresh = 1,
-		DaysTotallyRotten = 3,
+		DaysTotallyRotten = 4,
 		HungerChange = -26,
 		UnhappyChange = 20,
 		Calories = 403,
