@@ -791,12 +791,26 @@ module peifish
 		OBSOLETE = true,
 	}
 
+	recipe Slice Fillet
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        Bass/Catfish/Perch/Crappie/Panfish/Pike/Trout,
+
+        Result:FishFillet=2,
+        Sound:SliceMeat,
+        Time:50.0,
+        OnTest:Recipe.OnTest.CutFish,
+        OnCreate:Recipe.OnCreate.CutFish,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		OBSOLETE = true,
+    }
 	
 	/************************ Recipes ************************/
 	recipe Slice Fillet
     {
         keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
-        Bass/Perch/Pike/Trout,
+        BrownBullheadCatfish/AtlanticCod/AtlanticHalibut/AtlanticHerring/AtlanticMackerel/AtlanticTomcod/SummerFlounder/Haddock/Lumpfish/Pollack/RainbowSmelt/SpinyDogfish/StripedBass/WhitePerch/WinterFlounder/BrookTrout/BrownTrout/Gaspereau/RainbowSmelt/BrownTrout
 
         Result:FishFillet=2,
         Sound:SliceMeat,
@@ -807,5 +821,18 @@ module peifish
         OnGiveXP:Recipe.OnGiveXP.Cooking10,
 		Sound:SliceMeat,
     }
-	
+	recipe Slice Fillet
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        AtlanticSalmon,
+
+        Result:Salmon=2,
+        Sound:SliceMeat,
+        Time:50.0,
+        OnTest:Recipe.OnTest.CutFish,
+        OnCreate:Recipe.OnCreate.CutFish,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Sound:SliceMeat,
+    }
 }
