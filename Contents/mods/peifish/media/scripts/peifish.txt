@@ -1,5 +1,7 @@
 module peifish
-{
+imports {
+	Base
+}
 	/************************ Tyne Valley Only - Zone 5 ************************/
 	item BrownBullheadCatfish
 	{
