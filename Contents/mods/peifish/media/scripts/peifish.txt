@@ -1,4 +1,4 @@
-module peifish
+module peifish {
 imports {
 	Base
 }
