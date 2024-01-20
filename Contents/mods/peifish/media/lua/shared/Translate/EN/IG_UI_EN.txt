@@ -1,0 +1,21 @@
+IGUI_EN = {
+    IGUI_AtlanticCod = "Atlantic Cod",
+    IGUI_AtlanticHalibut = "Atlantic Halibut",
+    IGUI_AtlanticHerring = "Atlantic Herring"
+    IGUI_AtlanticMackerel = "Atlantic Mackerel"
+    IGUI_AtlanticSalmon = "Atlantic Salmon"
+    IGUI_AtlanticTomcod = "Atlantic Tomcod"
+    IGUI_SummerFlounder = "Summer Flounder"
+    IGUI_Haddock = "Haddock"
+    IGUI_Lumpfish = "Lumpfish"
+    IGUI_Pollack = "Pollack"
+    IGUI_RainbowSmelt = "Rainbow Smelt"
+    IGUI_SpinyDogfish = "Spiny Dogfish",
+    IGUI_StripedBass = "Striped Bass",
+    IGUI_WhitePerch = "White Perch",
+    IGUI_WinterFlounder = "Winter Flounder",
+    IGUI_BrookTrout = "Brook Trout",
+    IGUI_BrownTrout = "Brown Trout",
+    IGUI_Gaspereau = "Gaspereau",
+    IGUI_BrownBullheadCatfish = "Brown Bullhead Catfish",
+}

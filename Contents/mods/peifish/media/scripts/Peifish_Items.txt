@@ -1,35 +1,5 @@
-module peifish {
-    imports {
-        Base
-    }
-	/************************ Tyne Valley Only - Zone 5 ************************/
-	item BrownBullheadCatfish
-	{
-		DisplayName = Brown Bullhead Catfish,
-		DisplayCategory = Food,
-		Type = Food,
-		Weight = 0.4,
-		Icon = FishCatfish,
-		BadCold = true,
-		BadInMicrowave = true,
-		DangerousUncooked = TRUE,
-		GoodHot = true,
-		IsCookable = true,
-		OnCreate = Fishing.OnCreateFish,
-		RemoveUnhappinessWhenCooked = true,
-		MinutesToCook = 20,
-		MinutesToBurn = 60,
-		DaysFresh = 1,
-		DaysTotallyRotten = 3,
-		HungerChange = -15,
-		UnhappyChange = 20,
-		Calories = 215,
-		Carbohydrates = 1,
-		Lipids = 4,
-		Proteins = 28,
-		StaticModel = Catfish,
-		WorldStaticModel = Catfish,
-	}
+module Base
+{
 
 	/************************ Saltwater Fish -  ************************/
 	item AtlanticCod
@@ -38,7 +8,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishCod,
+		Icon = textures/Item_PeiFish/Item_AtlanticCod,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -50,14 +20,13 @@ module peifish {
 		MinutesToBurn = 60,
 		DaysFresh = 1,
 		DaysTotallyRotten = 4,
-		HungerChange = -26,
+		HungerChange = -55,
 		UnhappyChange = 20,
 		Calories = 403,
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Bass,
-		WorldStaticModel = Bass,
+		WorldStaticModel = AtlanticCod,
 	}
 
 	item AtlanticHalibut
@@ -66,7 +35,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_Halibut,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -84,8 +53,7 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Sunfish,
-		WorldStaticModel = Sunfish,
+		WorldStaticModel = AtlanticHalibut,
 	}
 
 	item AtlanticHerring
@@ -94,7 +62,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_Herring,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -112,8 +80,7 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Trout,
-		WorldStaticModel = Trout,
+		WorldStaticModel = AtlanticHerring,
 	}
 
 	item AtlanticMackerel
@@ -122,7 +89,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_AtlanticMackerel,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -140,8 +107,7 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Trout,
-		WorldStaticModel = Trout,
+		WorldStaticModel = AtlanticMackerel,
 	}
 
 	item AtlanticSalmon
@@ -150,7 +116,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_AtlanticSalmon,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -168,8 +134,7 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Bass,
-		WorldStaticModel = Bass,
+		WorldStaticModel = AtlanticSalmon,
 	}
 
 	item AtlanticTomcod
@@ -178,7 +143,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_AtlanticTomcod,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -196,8 +161,7 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Pike,
-		WorldStaticModel = Pike,
+		WorldStaticModel = AtlanticTomcod,
 	}
 
 	item SummerFlounder
@@ -206,7 +170,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_SummerFlounder,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -224,8 +188,7 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Sunfish,
-		WorldStaticModel = Sunfish,
+		WorldStaticModel = SummerFlounder,
 	}
 
 	item Haddock
@@ -234,7 +197,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_Haddock,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -252,8 +215,7 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Trout,
-		WorldStaticModel = Trout,
+		WorldStaticModel = Haddock,
 	}
 
 	item Lumpfish
@@ -262,7 +224,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_Lumpfish,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -280,8 +242,7 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Perch,
-		WorldStaticModel = Perch,
+		WorldStaticModel = Lumpfish,
 	}
 
 	item Pollack
@@ -290,7 +251,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_Pollack,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -308,8 +269,7 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Trout,
-		WorldStaticModel = Trout,
+		WorldStaticModel = Pollack,
 	}
 
 	item RainbowSmelt
@@ -318,7 +278,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_RainbowSmelt,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -336,8 +296,7 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Littlebaitfish,
-		WorldStaticModel = Littlebaitfish,
+		WorldStaticModel = RainbowSmelt,
 	}
 
 	item SpinyDogfish
@@ -346,7 +305,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_SpinyDogfish,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -364,8 +323,7 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Pike,
-		WorldStaticModel = Pike,
+		WorldStaticModel = SpinyDogfish,
 	}
 
 	item StripedBass
@@ -374,7 +332,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_StripedBass,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -392,8 +350,7 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Bass,
-		WorldStaticModel = Bass,
+		WorldStaticModel = StripedBass,
 	}
 
 	item WhitePerch
@@ -402,7 +359,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_WhitePerch,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -420,8 +377,7 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Crappie,
-		WorldStaticModel = Crappie,
+		WorldStaticModel = WhitePerch,
 	}
 
 	item WinterFlounder
@@ -430,7 +386,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_WinterFlounder,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -448,8 +404,7 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Sunfish,
-		WorldStaticModel = Sunfish,
+		WorldStaticModel = WinterFlounder,
 	}
 
 	/************************ Freshwater Fish -  ************************/
@@ -459,7 +414,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_BrookTrout,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -477,8 +432,7 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Trout,
-		WorldStaticModel = Trout,
+		WorldStaticModel = BrookTrout,
 	}
 
 	item BrownTrout
@@ -487,7 +441,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_BrownTrout,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -505,8 +459,7 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Trout,
-		WorldStaticModel = Trout,
+		WorldStaticModel = BrownTrout,
 	}
 
 	item Gaspereau 
@@ -515,7 +468,7 @@ module peifish {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.7,
-		Icon = FishHalibut,
+		Icon = textures/Item_PeiFish/Item_Gaspereau,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -533,74 +486,16 @@ module peifish {
 		Carbohydrates = 1,
 		Lipids = 24,
 		Proteins = 48,
-		StaticModel = Bass,
-		WorldStaticModel = Bass,
+		WorldStaticModel = Gaspereau,
 	}
 
-	item RainbowSmelt
+	item BrownBullheadCatfish
 	{
-		DisplayName = Rainbow Smelt,
-		DisplayCategory = Food,
-		Type = Food,
-		Weight = 0.7,
-		Icon = FishHalibut,
-		BadCold = true,
-		BadInMicrowave = true,
-		DangerousUncooked = TRUE,
-		GoodHot = true,
-		IsCookable = true,
-		OnCreate = Fishing.OnCreateFish,
-		RemoveUnhappinessWhenCooked = true,
-		MinutesToCook = 20,
-		MinutesToBurn = 60,
-		DaysFresh = 1,
-		DaysTotallyRotten = 3,
-		HungerChange = -26,
-		UnhappyChange = 20,
-		Calories = 403,
-		Carbohydrates = 1,
-		Lipids = 24,
-		Proteins = 48,
-		StaticModel = Trout,
-		WorldStaticModel = Trout,
-	}
-
-	item BrownTrout
-	{
-		DisplayName = Brown Trout,
-		DisplayCategory = Food,
-		Type = Food,
-		Weight = 0.7,
-		Icon = FishHalibut,
-		BadCold = true,
-		BadInMicrowave = true,
-		DangerousUncooked = TRUE,
-		GoodHot = true,
-		IsCookable = true,
-		OnCreate = Fishing.OnCreateFish,
-		RemoveUnhappinessWhenCooked = true,
-		MinutesToCook = 20,
-		MinutesToBurn = 60,
-		DaysFresh = 1,
-		DaysTotallyRotten = 3,
-		HungerChange = -26,
-		UnhappyChange = 20,
-		Calories = 403,
-		Carbohydrates = 1,
-		Lipids = 24,
-		Proteins = 48,
-		StaticModel = Trout,
-		WorldStaticModel = Trout,
-	}
-	
-	/************************ Overrides ************************/
-	item Catfish
-	{
-		DisplayName = Catfish,
+		DisplayName = Brown Bullhead Catfish,
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.4,
-		Icon = FishCatfish,
+		Icon = textures/Item_PeiFish/Item_BrownBullheadCatfish,
 		BadCold = true,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -610,232 +505,15 @@ module peifish {
 		RemoveUnhappinessWhenCooked = true,
 		MinutesToCook = 20,
 		MinutesToBurn = 60,
-		DaysFresh = 4,
-		DaysTotallyRotten = 8,
+		DaysFresh = 1,
+		DaysTotallyRotten = 3,
 		HungerChange = -15,
 		UnhappyChange = 20,
 		Calories = 215,
 		Carbohydrates = 1,
 		Lipids = 4,
 		Proteins = 28,
-		StaticModel = Catfish,
-		WorldStaticModel = Catfish,
-		Override:true,
-	}
-	
-	item Bass
-	{
-		DisplayName = Bass,
-		DisplayCategory = Food,
-		Type = Food,
-		Weight = 0.7,
-		Icon = FishBass,
-		BadCold = true,
-		BadInMicrowave = true,
-		DangerousUncooked = TRUE,
-		GoodHot = true,
-		IsCookable = true,
-		OnCreate = Fishing.OnCreateFish,
-		RemoveUnhappinessWhenCooked = true,
-		MinutesToCook = 20,
-		MinutesToBurn = 60,
-		DaysFresh = 4,
-		DaysTotallyRotten = 8,
-		HungerChange = -26,
-		UnhappyChange = 20,
-		Calories = 403,
-		Carbohydrates = 1,
-		Lipids = 24,
-		Proteins = 48,
-		StaticModel = Bass,
-		WorldStaticModel = Bass,
-		Override:true,
-	}
-	
-	item Perch
-	{
-		DisplayName = Perch,
-		DisplayCategory = Food,
-		Type = Food,
-		Weight = 0.4,
-		Icon = FishPerch,
-		BadCold = true,
-		BadInMicrowave = true,
-		DangerousUncooked = TRUE,
-		GoodHot = true,
-		IsCookable = true,
-		OnCreate = Fishing.OnCreateFish,
-		RemoveUnhappinessWhenCooked = true,
-		MinutesToCook = 20,
-		MinutesToBurn = 60,
-		DaysFresh = 4,
-		DaysTotallyRotten = 8,
-		HungerChange = -15,
-		UnhappyChange = 20,
-		Calories = 165,
-		Carbohydrates = 1,
-		Lipids = 1,
-		Proteins = 35,
-		WorldStaticModel = Perch,
-		Override:true,
+		WorldStaticModel = BrownBullheadCatfish,
 	}
 
-	item Crappie
-	{
-		DisplayName = Crappie,
-		DisplayCategory = Food,
-		Type = Food,
-		Weight = 0.4,
-		Icon = FishCrappie,
-		BadCold = true,
-		BadInMicrowave = true,
-		DangerousUncooked = TRUE,
-		GoodHot = true,
-		IsCookable = true,
-		OnCreate = Fishing.OnCreateFish,
-		RemoveUnhappinessWhenCooked = true,
-		MinutesToCook = 20,
-		MinutesToBurn = 60,
-		DaysFresh = 4,
-		DaysTotallyRotten = 8,
-		HungerChange = -15,
-		UnhappyChange = 20,
-		Calories = 165,
-		Carbohydrates = 1,
-		Lipids = 1,
-		Proteins = 35,
-		StaticModel = Crappie,
-		WorldStaticModel = Crappie,
-		Override:true,
-	}
-
-	item Panfish
-	{
-		DisplayName = Sunfish,
-		DisplayCategory = Food,
-		Type = Food,
-		Weight = 0.4,
-		Icon = FishPanfish,
-		BadCold = true,
-		BadInMicrowave = true,
-		DangerousUncooked = TRUE,
-		GoodHot = true,
-		IsCookable = true,
-		OnCreate = Fishing.OnCreateFish,
-		RemoveUnhappinessWhenCooked = true,
-		MinutesToCook = 20,
-		MinutesToBurn = 60,
-		DaysFresh = 4,
-		DaysTotallyRotten = 8,
-		HungerChange = -15,
-		UnhappyChange = 20,
-		Calories = 155,
-		Carbohydrates = 1,
-		Lipids = 2,
-		Proteins = 25,
-		WorldStaticModel = SunFish,
-		Override:true,
-	}
-
-	item Pike
-	{
-		DisplayName = Pike,
-		DisplayCategory = Food,
-		Type = Food,
-		Weight = 0.4,
-		Icon = FishPike,
-		BadCold = true,
-		BadInMicrowave = true,
-		DangerousUncooked = TRUE,
-		GoodHot = true,
-		IsCookable = true,
-		OnCreate = Fishing.OnCreateFish,
-		RemoveUnhappinessWhenCooked = true,
-		MinutesToCook = 20,
-		MinutesToBurn = 60,
-		DaysFresh = 4,
-		DaysTotallyRotten = 8,
-		HungerChange = -15,
-		UnhappyChange = 20,
-		Calories = 159,
-		Carbohydrates = 1,
-		Lipids = 1,
-		Proteins = 35,
-		WorldStaticModel = Pike_Ground,
-		Override:true,
-	}
-	
-	item Trout
-	{
-		DisplayName = Trout,
-		DisplayCategory = Food,
-		Type = Food,
-		Weight = 0.4,
-		Icon = FishTrout,
-		BadCold = true,
-		BadInMicrowave = true,
-		DangerousUncooked = TRUE,
-		GoodHot = true,
-		IsCookable = true,
-		OnCreate = Fishing.OnCreateFish,
-		RemoveUnhappinessWhenCooked = true,
-		MinutesToCook = 20,
-		MinutesToBurn = 60,
-		DaysFresh = 4,
-		DaysTotallyRotten = 8,
-		HungerChange = -15,
-		UnhappyChange = 20,
-		Calories = 230,
-		Carbohydrates = 1,
-		Lipids = 10,
-		Proteins = 36,
-		WorldStaticModel = Trout,
-		Override:true,
-	}
-
-	recipe Slice Fillet
-    {
-        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
-        Bass/Catfish/Perch/Crappie/Panfish/Pike/Trout,
-
-        Result:FishFillet=2,
-        Sound:SliceMeat,
-        Time:50.0,
-        OnTest:Recipe.OnTest.CutFish,
-        OnCreate:Recipe.OnCreate.CutFish,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking10,
-		Override:true,
-    }
-	
-	/************************ Recipes ************************/
-	recipe Slice Fillet
-    {
-        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
-        BrownBullheadCatfish/AtlanticCod/AtlanticHalibut/AtlanticHerring/AtlanticMackerel/AtlanticTomcod/SummerFlounder/Haddock/Lumpfish/Pollack/RainbowSmelt/SpinyDogfish/StripedBass/WhitePerch/WinterFlounder/BrookTrout/BrownTrout/Gaspereau/RainbowSmelt/BrownTrout,
-
-        Result:FishFillet=2,
-        Sound:SliceMeat,
-        Time:50.0,
-        OnTest:Recipe.OnTest.CutFish,
-        OnCreate:Recipe.OnCreate.CutFish,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking10,
-		Sound:SliceMeat,
-    }
-	
-	recipe Slice Fillet
-    {
-        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
-        AtlanticSalmon,
-
-        Result:Salmon=2,
-        Sound:SliceMeat,
-        Time:50.0,
-        OnTest:Recipe.OnTest.CutFish,
-        OnCreate:Recipe.OnCreate.CutFish,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking10,
-		Sound:SliceMeat,
-    }
 }
