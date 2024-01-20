@@ -620,7 +620,7 @@ module peifish {
 		Proteins = 28,
 		StaticModel = Catfish,
 		WorldStaticModel = Catfish,
-		OBSOLETE = true,
+		Override:true,
 	}
 	
 	item Bass
@@ -649,7 +649,7 @@ module peifish {
 		Proteins = 48,
 		StaticModel = Bass,
 		WorldStaticModel = Bass,
-		OBSOLETE = true,
+		Override:true,
 	}
 	
 	item Perch
@@ -677,7 +677,7 @@ module peifish {
 		Lipids = 1,
 		Proteins = 35,
 		WorldStaticModel = Perch,
-		OBSOLETE = true,
+		Override:true,
 	}
 
 	item Crappie
@@ -706,7 +706,7 @@ module peifish {
 		Proteins = 35,
 		StaticModel = Crappie,
 		WorldStaticModel = Crappie,
-		OBSOLETE = true,
+		Override:true,
 	}
 
 	item Panfish
@@ -734,7 +734,7 @@ module peifish {
 		Lipids = 2,
 		Proteins = 25,
 		WorldStaticModel = SunFish,
-		OBSOLETE = true,
+		Override:true,
 	}
 
 	item Pike
@@ -762,7 +762,7 @@ module peifish {
 		Lipids = 1,
 		Proteins = 35,
 		WorldStaticModel = Pike_Ground,
-		OBSOLETE = true,
+		Override:true,
 	}
 	
 	item Trout
@@ -790,7 +790,7 @@ module peifish {
 		Lipids = 10,
 		Proteins = 36,
 		WorldStaticModel = Trout,
-		OBSOLETE = true,
+		Override:true,
 	}
 
 	recipe Slice Fillet
@@ -805,7 +805,7 @@ module peifish {
         OnCreate:Recipe.OnCreate.CutFish,
         Category:Cooking,
         OnGiveXP:Recipe.OnGiveXP.Cooking10,
-		OBSOLETE = true,
+		Override:true,
     }
 	
 	/************************ Recipes ************************/
