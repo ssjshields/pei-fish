@@ -1,4 +1,5 @@
-name=Pei Fish
-id=Pei_Fish_z
-description= Fishies
+name=Lost Province Fish Zones
+id=Lost Province Fish Zones
+description=Optional Fish Add-on for Lost Province which utilizes ZoneAPI
 poster=poster.png
+require=ZoneAPIChucked, CleanWater
