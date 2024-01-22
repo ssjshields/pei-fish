@@ -3,3 +3,4 @@ id=Lost Province Fish Zones
 description=Optional Fish Add-on for Lost Province which utilizes ZoneAPI
 poster=poster.png
 require=ZoneAPIChucked, CleanWater
+icon=logo.png
