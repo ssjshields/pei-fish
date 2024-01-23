@@ -1,4 +1,2 @@
-local FishingZonesEstuariesDefaults = require "FishingZonesEstuariesDefaults"
-local FishingZonesGroundDefaults = require "FishingZonesGroundDefaults"
-Events.OnInitGlobalModData.Add(FishingZonesEstuariesDefaults.init)
-Events.OnInitGlobalModData.Add(FishingZonesGroundDefaults.init)
+local FishingZonesDefaults = require "FishingZonesDefaults"
+Events.OnInitGlobalModData.Add(FishingZonesDefaults.init)
