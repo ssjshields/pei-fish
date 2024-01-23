@@ -22,6 +22,6 @@ FishingZonesGroundDefaults.Zone = {
         FishingZonesGroundDefaults.addZone("Q", 9846, 4060, 9913, 4109, FishingZonesGround)
         FishingZonesGroundDefaults.addZone("R", 10209, 4602, 10247, 4629, FishingZonesGround)
         FishingZonesGroundDefaults.addZone("S", 10440, 3962, 10492, 3992, FishingZonesGround)
-		FishingZonesGroundDefaults.addZone("T", 4858, 3782, 4906, 3806, FishingZonesGround)
+	FishingZonesGroundDefaults.addZone("T", 4858, 3782, 4906, 3806, FishingZonesGround)
         FishingZonesGroundDefaults.addZone("U", 4922, 3796, 5009, 3867, FishingZonesGround)
 return FishingZonesGroundDefaults
