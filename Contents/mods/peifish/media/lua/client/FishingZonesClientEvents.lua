@@ -1,0 +1,2 @@
+local FishingZonesApplyClassification = require "FishingZonesApplyClassification"
+Events.OnGameBoot.Add(FishingZonesApplyClassification.apply)
