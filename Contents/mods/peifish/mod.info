@@ -1,7 +1,6 @@
 name=Fish Zones
 id=FishZones
-description=Add-on for ZoneAPI that specifies what fish spawn where.
-description=Create custom "Fishing" zones using the admin Zone Editor.
+description=Add-On for ZoneAPI that specifies where fish can spawn. Requires fish to be classified in order to work. Custom zones must match fish classifications.[/h2][/h3]
 poster=poster.png
 icon=logo.png
 require=ZoneAPIChucked

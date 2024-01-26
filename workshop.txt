@@ -1,6 +1,22 @@
 version=1
-id=
-title=peifish
-description=This is an example mod with two worlds.  You can use this as a template for your own map mods.
+title=Fishing Zones
+description=[h2]Add-On for ZoneAPI that specifies where fish can spawn.[/h2]
+description=[h3][b]Requires fish to be classified in order to work.[/b][/h3]
+description=[h3]Custom zones must match fish classifications.[/h2][/h3]
+description=
+description=[url=https://ko-fi.com/ssjshields][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting nurver[/b][/url][url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/kofi.png[/img][/url]
+description=[url=https://discord.gg/SReMnbV4V7][img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/PZmodCommBanner2.png[/img][/url]
+description=[url=https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/bingo.png][img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/readThrough.png[/img][/url]
+description=[img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/noModPacks.png[/img]
+description=[img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/bugHunt.png[/img]
+description=[quote][b]Windows:[/b] %userprofile%\Zomboid\console.txt[/quote]
+description=[quote][b]Mac/Linux:[/b] $User\Zomboid\console.txt[/quote]
+description=Upload this file [b]in entirety[/b] to [url=https://github.com/ssjshields/pei-fish]Github[/url] as an issue.
+description=Share the link in a comment below if it is urgent.
+description=
+description=
+description=
+description=[h3]Copyright 2021 Chuck & nurver. This item is not authorized for posting on Steam, except under the Steam account(s) [url=https://steamcommunity.com/id/Chuckleberry_Finn]Chuckleberry_Finn[/url] & [url=https://steamcommunity.com/id/itsmedirtydan]itsmedirtydan[/url].[/h3]
+description=[h3]Redistribution of this mod without explicit permission from the original creator(s) is prohibited under any circumstances. This includes, but is not limited to, uploading this mod to the Steam Workshop or any other site, redistribution as part of another mod, mod pack, server pack or the distribution of modified versions.[/h3]
 tags=
 visibility=unlisted

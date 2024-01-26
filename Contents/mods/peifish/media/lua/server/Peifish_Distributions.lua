@@ -1,3 +1,5 @@
+return
+--[[
 require 'Items/ProceduralDistributions'
                                                                 
 table.insert(ProceduralDistributions["list"]["ButcherFish"].items,"Base.AtlanticCod")
@@ -86,3 +88,4 @@ table.insert(ProceduralDistributions["list"]["StoreKitchenButcher"].items, 2)
 
 table.insert(ProceduralDistributions["list"]["SushiKitchenFreezer"].items,"Base.AtlanticSalmon")
 table.insert(ProceduralDistributions["list"]["SushiKitchenFreezer"].items, 5)
+--]]

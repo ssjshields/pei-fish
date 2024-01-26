@@ -1,3 +1,5 @@
+return
+--[[
 require "Fishing/fishing_properties"
 
 local classifyFish = {
@@ -239,3 +241,4 @@ BrownBullheadCatfish.medium = {minSize = 45, maxSize = 55, weightChange = 20}
 BrownBullheadCatfish.big = {minSize = 55, maxSize = 65, weightChange = 10}
 BrownBullheadCatfish.classification = "catfish"
 table.insert(fishes, BrownBullheadCatfish)
+--]]
