@@ -1,5 +1,6 @@
 local FishingZonesApplyClassifications = {}
 
+require "client/Fishing/FishingManager"
 
 function FishingZonesApplyClassifications.apply()
 
