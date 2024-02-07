@@ -12,7 +12,7 @@ function ISFishingAction:getCurrentZoneTypes()
     local zoneTypes = nil
 
     for i, zone in pairs(fishingZones) do
-        if (not zoneTypes[zone.classification]) and zone.coordinates and charX >= zone.coordinates.x1 and charX<=zone.coordinates.x2 and charY>=zone.coordinates.y1 and charY<=zone.coordinates.y2 then
+        if ((not zoneTypes) or (not zoneTypes[zone.classification])) and zone.coordinates and charX >= zone.coordinates.x1 and charX<=zone.coordinates.x2 and charY>=zone.coordinates.y1 and charY<=zone.coordinates.y2 then
             zoneTypes = zoneTypes or {}
             zoneTypes[zone.classification] = true
         end
