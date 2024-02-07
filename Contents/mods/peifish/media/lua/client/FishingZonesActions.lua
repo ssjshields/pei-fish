@@ -45,7 +45,8 @@ function ISFishingAction:getFishByLure()
             end
             item = fetchedFishes[ZombRand(#fetchedFishes) + 1]
         else
-            item = Fishing.fishes[ZombRand(#Fishing.fishes) + 1]
+            local nonZoneFish = Fishing.fishesByZone["NO_ZONE"]
+            item = nonZoneFish[ZombRand(#nonZoneFish) + 1]
         end
 
     end

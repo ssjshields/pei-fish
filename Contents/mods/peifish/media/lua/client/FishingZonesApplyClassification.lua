@@ -14,6 +14,8 @@ FishingZonesApplyClassifications._zoneToFish["ground"] = {"Brook Trout", "Brown 
 
 FishingZonesApplyClassifications._zoneToFish["catfish"] = {"Brown Bullhead Catfish"}
 
+FishingZonesApplyClassifications._zoneToFish["NO_ZONE"] = {}
+
 ---Load temp list as true for easier compare
 FishingZonesApplyClassifications.zoneToFish = {}
 for zone,fishes in pairs(FishingZonesApplyClassifications._zoneToFish) do
