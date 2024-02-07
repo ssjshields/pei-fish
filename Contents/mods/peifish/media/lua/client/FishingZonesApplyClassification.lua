@@ -5,16 +5,13 @@ require "client/Fishing/FishingManager"
 FishingZonesApplyClassifications._zoneToFish = {}
 
 FishingZonesApplyClassifications._zoneToFish["estuaries"] = {
-    "Atlantic Cod", "Atlantic Halibut", "Atlantic Herring", "Atlantic Mackerel", "Atlantic Salmon",
-    "Atlantic Tomcod", "Summer Flounder", "Haddock", "Lumpfish", "Pollack", "Rainbow Smelt",
-    "Spiny Dogfish", "Striped Bass", "White Perch", "Winter Flounder"
-}
+    "Atlantic Salmon", "Atlantic Tomcod", "Striped Bass", "Rainbow Smelt", "Brook Trout", "Brown Trout", "Gaspereau"}
 
-FishingZonesApplyClassifications._zoneToFish["ground"] = {"Brook Trout", "Brown Trout", "Gaspereau"}
+FishingZonesApplyClassifications._zoneToFish["ground"] = {"Little Bait Fish"}
 
 FishingZonesApplyClassifications._zoneToFish["catfish"] = {"Brown Bullhead Catfish"}
 
-FishingZonesApplyClassifications._zoneToFish["NO_ZONE"] = {}
+FishingZonesApplyClassifications._zoneToFish["NO_ZONE"] = {"Atlantic Cod", "Atlantic Halibut", "Atlantic Herring", "Atlantic Mackerel", "Atlantic Salmon", "Atlantic Tomcod", "Summer Flounder", "Haddock", "Lumpfish", "Pollack", "Rainbow Smelt", "Spiny Dogfish", "Striped Bass", "White Perch", "Winter Flounder"}
 
 ---Load temp list as true for easier compare
 FishingZonesApplyClassifications.zoneToFish = {}
